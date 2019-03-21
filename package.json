@@ -6,10 +6,9 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "export": "next export",
-    "deploy": "npm run build && npm run export"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
